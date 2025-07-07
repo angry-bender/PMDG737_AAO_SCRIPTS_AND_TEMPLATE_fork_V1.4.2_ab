@@ -13,6 +13,31 @@ This updates the existing configuration to add the following features
 # Custom config
 Thus template has even more, it includes rhe lights and some tweaks to the controls as detailed below
 
+## Layouts
+Thanks for the clarification! Here's how those two rows can be formatted into clean Markdown tables:
+
+---
+
+### ✈️ - AP Selector and Correlating Light Indicator
+
+| HDG SEL MODE | VNAV             | **Short:** _App_ **Long:** _VOR/LOC_ |LNAV | **Short:** _ALT HLD_ **Long:** _ALT INTV_ |V/S Mode  | **Short:** _LVL CHNG _**Long:**_ SPD INTV_|
+|--------------|------------------|----------------------------------|-----|---------------------------------------|----------|--------------------------------------|
+|              |VNAV _or_  VOR/LOC|                                  |LNAV |    ALT HLD                            |          |                  | SPD     |
+
+---
+
+### 🧭 Switches
+
+| **SEATBELT** _On/Off_ | **Eng Mode Switch** _CONT/OFF_ | **ENG ANTI-ICE** _On/Off_ | **APU** _On/off_ |  **APU BLEED**_ On/Off_ | **DOME LIGHT** _CONT/OFF_ | **PArking Break** _On/Off_ 
+|-----------------------|--------------------------------|---------------------------|------------------|-------------------------|---------------------------|---------------------------
+
+### ⚡ Throttle
+
+| **GRD POWER** _On/Off_ | **BAT** _ON/OFF_ | **IRS1+2** _On/Off_ | **TARA/CLOCK** _Start/Off_ |   **AUTOBRK** _RTO/Off/2/3/MAX_ 
+|-----------------------|-------------------|---------------------|----------------------------|--------------------------------
+
+
+
 ## Requirements for custom config
 If you want to use the custom config you need to allow the sdk from %ROAMINGAPPDATA%\Microsoft Flight Simulator\Packages\PMDG 73X\main.cfg
 

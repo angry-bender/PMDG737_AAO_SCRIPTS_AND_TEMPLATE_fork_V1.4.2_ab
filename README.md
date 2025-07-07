@@ -31,7 +31,7 @@ Thanks for the clarification! Here's how those two rows can be formatted into cl
 | **SEATBELT** _On/Off_ | **Eng Mode Switch** _CONT/OFF_ | **ENG ANTI-ICE** _On/Off_ | **APU** _On/off_ |  **APU BLEED**_ On/Off_ | **DOME LIGHT** _CONT/OFF_ | **PArking Break** _On/Off_ 
 |-----------------------|--------------------------------|---------------------------|------------------|-------------------------|---------------------------|---------------------------
 
-### ⚡ Throttle
+### ⚡ Yoke
 
 | **GRD POWER** _On/Off_ | **BAT** _ON/OFF_ | **IRS1+2** _On/Off_ | **TARA/CLOCK** _Start/Off_ |   **AUTOBRK** _RTO/Off/2/3/MAX_ 
 |-----------------------|-------------------|---------------------|----------------------------|--------------------------------

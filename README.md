@@ -33,8 +33,8 @@ Thanks for the clarification! Here's how those two rows can be formatted into cl
 
 ### ⚡ Yoke
 
-| **GRD POWER** _On/Off_ | **BAT** _ON/OFF_ | **IRS1+2** _On/Off_ | **TARA/CLOCK** _Start/Off_ |   **AUTOBRK** _RTO/Off/2/3/MAX_ 
-|-----------------------|-------------------|---------------------|----------------------------|--------------------------------
+| **GRD POWER** _On/Off_ | **BAT** _ON/OFF_ | **IRS1+2** _On/Off_ | **TARA/CLOCK** _Start/Off_ | |  **AUTOBRK** _RTO/Off/2/3/MAX_ 
+|-----------------------|-------------------|---------------------|----------------------------|-|--------------------------------
 
 
 

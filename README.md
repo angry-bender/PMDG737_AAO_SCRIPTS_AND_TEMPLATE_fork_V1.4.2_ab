@@ -7,5 +7,5 @@ This project is a fork of the already existing mod on flightsim.to https://fligh
 This updates the existing configuration to add the following features
 
 - Remove the cuttoff feature from the throttle axis
-- Add in a flap lever that is compatable with the offical Honeycomb Bravo detents
+- Add in a flap lever that is compatable with the offical Honeycomb Bravo flap kit
 - Add in a custom spoiler axis that has FligtDetent at a more logical location with detent being right at the bottom of the physical leaver, and up in the middle.

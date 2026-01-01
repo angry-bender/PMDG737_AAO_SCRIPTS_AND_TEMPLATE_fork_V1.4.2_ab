@@ -2261,8 +2261,8 @@
           <Response>0</Response>
           <deviceMin>0</deviceMin>
           <deviceMax>65535</deviceMax>
-          <deviceCenter>42380</deviceCenter>
-          <leftMargin>-0</leftMargin>
+          <deviceCenter>42598</deviceCenter>
+          <leftMargin>0</leftMargin>
           <rightMargin>-0</rightMargin>
           <deadzone>0</deadzone>
           <nonlineardeadzone>false</nonlineardeadzone>
@@ -2276,6 +2276,36 @@
           <vkKeys />
         </assignedAxis>
         <detents />
+        <combinedKey>
+          <repeat>16384</repeat>
+          <repeatFrequency>1</repeatFrequency>
+          <repeatLimit>0</repeatLimit>
+          <joystickGuid>00000000-0000-0000-0000-000000000000</joystickGuid>
+          <joystickButton>0</joystickButton>
+          <joystickPovControl>0</joystickPovControl>
+          <joystickPovDirection>0</joystickPovDirection>
+          <midiDeviceId>0</midiDeviceId>
+          <midiChannel>0</midiChannel>
+          <midiEvent>0</midiEvent>
+          <endless>false</endless>
+          <rockerMode>false</rockerMode>
+          <midiEncoder>NONE</midiEncoder>
+          <isSimKey>false</isSimKey>
+          <isOnOffSwitch>false</isOnOffSwitch>
+          <comboSuppressesEvent>false</comboSuppressesEvent>
+          <comboIsToggle>false</comboIsToggle>
+          <longClick>false</longClick>
+          <longClickTimeoutMs>0</longClickTimeoutMs>
+          <fastTurn>false</fastTurn>
+          <timeoutMs>0</timeoutMs>
+          <skipActuations>0</skipActuations>
+          <adaptiveRepeat>false</adaptiveRepeat>
+          <assignedKeys />
+          <vkModifiers />
+          <vkKeys />
+          <ControlLayer>0</ControlLayer>
+          <RedirectInput>false</RedirectInput>
+        </combinedKey>
         <ControlLayer>0</ControlLayer>
       </GlobalAxis>
       <GlobalAxis>
@@ -2301,9 +2331,9 @@
           <Response>2</Response>
           <deviceMin>0</deviceMin>
           <deviceMax>65535</deviceMax>
-          <deviceCenter>52429</deviceCenter>
+          <deviceCenter>52428</deviceCenter>
           <leftMargin>0</leftMargin>
-          <rightMargin>0</rightMargin>
+          <rightMargin>-0</rightMargin>
           <deadzone>0</deadzone>
           <nonlineardeadzone>false</nonlineardeadzone>
           <reversed>true</reversed>
@@ -2322,7 +2352,33 @@
     <overrideSaitekPanelInMidiMode />
     <overrideSaitekEvents />
     <overrideSaitekVariables />
-    <autoScripts />
+    <autoScripts>
+      <AutoScript>
+        <scriptId>Lorby_PMDG737_HCB-AllLedsOff</scriptId>
+        <delayMilliseconds>100</delayMilliseconds>
+        <type>FINALLY</type>
+      </AutoScript>
+      <AutoScript>
+        <scriptId>Lorby_PMDG737_HCB-AllLedsOn</scriptId>
+        <delayMilliseconds>100</delayMilliseconds>
+        <type>ONCE</type>
+      </AutoScript>
+      <AutoScript>
+        <scriptId>Lorby_PMDG737_HCB-LedUpdatePmdg737</scriptId>
+        <delayMilliseconds>200</delayMilliseconds>
+        <type>LOOP</type>
+      </AutoScript>
+      <AutoScript>
+        <scriptId>PMDG-PMDG_737MSFS_CDU</scriptId>
+        <delayMilliseconds>200</delayMilliseconds>
+        <type>LOOP</type>
+      </AutoScript>
+      <AutoScript>
+        <scriptId>PMDG-PMDG_737MSFS_Data</scriptId>
+        <delayMilliseconds>200</delayMilliseconds>
+        <type>LOOP</type>
+      </AutoScript>
+    </autoScripts>
     <virtualGaugesTemplateGuid>00000000-0000-0000-0000-000000000000</virtualGaugesTemplateGuid>
     <desktopGaugesTemplateGuid>00000000-0000-0000-0000-000000000000</desktopGaugesTemplateGuid>
     <webGaugesTemplateGuid>00000000-0000-0000-0000-000000000000</webGaugesTemplateGuid>
@@ -2655,6 +2711,35 @@
       <label>HUD_UP</label>
       <script>1 (&gt;K:#70611)</script>
       <edition>&lt;Section xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xml:space="preserve" TextAlignment="Left" LineHeight="Auto" IsHyphenationEnabled="False" xml:lang="en-us" FlowDirection="LeftToRight" NumberSubstitution.CultureSource="Text" NumberSubstitution.Substitution="AsCulture" FontFamily="Courier New" FontStyle="Normal" FontWeight="Normal" FontStretch="Normal" FontSize="12" Foreground="#FF000000" Typography.StandardLigatures="True" Typography.ContextualLigatures="True" Typography.DiscretionaryLigatures="False" Typography.HistoricalLigatures="False" Typography.AnnotationAlternates="0" Typography.ContextualAlternates="True" Typography.HistoricalForms="False" Typography.Kerning="True" Typography.CapitalSpacing="False" Typography.CaseSensitiveForms="False" Typography.StylisticSet1="False" Typography.StylisticSet2="False" Typography.StylisticSet3="False" Typography.StylisticSet4="False" Typography.StylisticSet5="False" Typography.StylisticSet6="False" Typography.StylisticSet7="False" Typography.StylisticSet8="False" Typography.StylisticSet9="False" Typography.StylisticSet10="False" Typography.StylisticSet11="False" Typography.StylisticSet12="False" Typography.StylisticSet13="False" Typography.StylisticSet14="False" Typography.StylisticSet15="False" Typography.StylisticSet16="False" Typography.StylisticSet17="False" Typography.StylisticSet18="False" Typography.StylisticSet19="False" Typography.StylisticSet20="False" Typography.Fraction="Normal" Typography.SlashedZero="False" Typography.MathematicalGreek="False" Typography.EastAsianExpertForms="False" Typography.Variants="Normal" Typography.Capitals="Normal" Typography.NumeralStyle="Normal" Typography.NumeralAlignment="Normal" Typography.EastAsianWidths="Normal" Typography.EastAsianLanguage="Normal" Typography.StandardSwashes="0" Typography.ContextualSwashes="0" Typography.StylisticAlternates="0"&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;1·(&amp;gt;K:#70611)&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/Section&gt;</edition>
+    </Script>
+    <Script>
+      <group>Lorby_PMDG737_HCB</group>
+      <label>AllLedsOff</label>
+      <script>'0000000000' (HIDWRITE:0x294B,0x1901,'%s1')</script>
+      <edition>&lt;Section xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xml:space="preserve" TextAlignment="Left" LineHeight="Auto" IsHyphenationEnabled="False" xml:lang="en-us" FlowDirection="LeftToRight" NumberSubstitution.CultureSource="Text" NumberSubstitution.Substitution="AsCulture" FontFamily="Courier New" FontStyle="Normal" FontWeight="Normal" FontStretch="Normal" FontSize="12" Foreground="#FF000000" Typography.StandardLigatures="True" Typography.ContextualLigatures="True" Typography.DiscretionaryLigatures="False" Typography.HistoricalLigatures="False" Typography.AnnotationAlternates="0" Typography.ContextualAlternates="True" Typography.HistoricalForms="False" Typography.Kerning="True" Typography.CapitalSpacing="False" Typography.CaseSensitiveForms="False" Typography.StylisticSet1="False" Typography.StylisticSet2="False" Typography.StylisticSet3="False" Typography.StylisticSet4="False" Typography.StylisticSet5="False" Typography.StylisticSet6="False" Typography.StylisticSet7="False" Typography.StylisticSet8="False" Typography.StylisticSet9="False" Typography.StylisticSet10="False" Typography.StylisticSet11="False" Typography.StylisticSet12="False" Typography.StylisticSet13="False" Typography.StylisticSet14="False" Typography.StylisticSet15="False" Typography.StylisticSet16="False" Typography.StylisticSet17="False" Typography.StylisticSet18="False" Typography.StylisticSet19="False" Typography.StylisticSet20="False" Typography.Fraction="Normal" Typography.SlashedZero="False" Typography.MathematicalGreek="False" Typography.EastAsianExpertForms="False" Typography.Variants="Normal" Typography.Capitals="Normal" Typography.NumeralStyle="Normal" Typography.NumeralAlignment="Normal" Typography.EastAsianWidths="Normal" Typography.EastAsianLanguage="Normal" Typography.StandardSwashes="0" Typography.ContextualSwashes="0" Typography.StylisticAlternates="0"&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;'0000000000'·(HIDWRITE:0x294B,0x1901,'%s1')&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/Section&gt;</edition>
+    </Script>
+    <Script>
+      <group>Lorby_PMDG737_HCB</group>
+      <label>AllLedsOn</label>
+      <script>'FFFFFFFFFF' (HIDWRITE:0x294B,0x1901,'%s1')</script>
+      <edition>&lt;Section xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xml:space="preserve" TextAlignment="Left" LineHeight="Auto" IsHyphenationEnabled="False" xml:lang="en-us" FlowDirection="LeftToRight" NumberSubstitution.CultureSource="Text" NumberSubstitution.Substitution="AsCulture" FontFamily="Courier New" FontStyle="Normal" FontWeight="Normal" FontStretch="Normal" FontSize="12" Foreground="#FF000000" Typography.StandardLigatures="True" Typography.ContextualLigatures="True" Typography.DiscretionaryLigatures="False" Typography.HistoricalLigatures="False" Typography.AnnotationAlternates="0" Typography.ContextualAlternates="True" Typography.HistoricalForms="False" Typography.Kerning="True" Typography.CapitalSpacing="False" Typography.CaseSensitiveForms="False" Typography.StylisticSet1="False" Typography.StylisticSet2="False" Typography.StylisticSet3="False" Typography.StylisticSet4="False" Typography.StylisticSet5="False" Typography.StylisticSet6="False" Typography.StylisticSet7="False" Typography.StylisticSet8="False" Typography.StylisticSet9="False" Typography.StylisticSet10="False" Typography.StylisticSet11="False" Typography.StylisticSet12="False" Typography.StylisticSet13="False" Typography.StylisticSet14="False" Typography.StylisticSet15="False" Typography.StylisticSet16="False" Typography.StylisticSet17="False" Typography.StylisticSet18="False" Typography.StylisticSet19="False" Typography.StylisticSet20="False" Typography.Fraction="Normal" Typography.SlashedZero="False" Typography.MathematicalGreek="False" Typography.EastAsianExpertForms="False" Typography.Variants="Normal" Typography.Capitals="Normal" Typography.NumeralStyle="Normal" Typography.NumeralAlignment="Normal" Typography.EastAsianWidths="Normal" Typography.EastAsianLanguage="Normal" Typography.StandardSwashes="0" Typography.ContextualSwashes="0" Typography.StylisticAlternates="0"&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;'FFFFFFFFFF'·(HIDWRITE:0x294B,0x1901,'%s1')&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/Section&gt;</edition>
+    </Script>
+    <Script>
+      <group>Lorby_PMDG737_HCB</group>
+      <label>LedUpdatePmdg737</label>
+      <script>'00000000' (PMDG:FUEL_annunLOWPRESS_Fwd[0]) (PMDG:FUEL_annunLOWPRESS_Fwd[1]) or if{ '00000001' |s } (A:BRAKE PARKING POSITION, Bool) if{ '00000002' |s } (PMDG:ELEC_annunGEN_BUS_OFF[0]) (PMDG:ELEC_annunGEN_BUS_OFF[1]) or if{ '00000004' |s } (PMDG:DOOR_annunFWD_ENTRY) if{ '00000008' |s } (PMDG:APU_annunLOW_OIL_PRESSURE) if{ '00000100' |s } (PMDG:FUEL_annunLOWPRESS_Fwd[0]) (PMDG:FUEL_annunLOWPRESS_Fwd[1]) or (PMDG:FUEL_annunLOWPRESS_Aft[0]) or (PMDG:FUEL_annunLOWPRESS_Aft[1]) or (PMDG:FUEL_annunLOWPRESS_Ctr[0]) or (PMDG:FUEL_annunLOWPRESS_Ctr[1]) or if{ '00000200' |s } (PMDG:ICE_WingAntiIceSw) (PMDG:ICE_EngAntiIceSw[0]) or (PMDG:ICE_EngAntiIceSw[1]) or if{ '00000400' |s } (PMDG:ENG_StartValve[0]) (PMDG:ENG_StartValve[1]) or if{ '00000800' |s } (PMDG:APU_Selector) if{ '00001000' |s } (PMDG:WARN_annunMASTER_CAUTION[0]) if{ '00002000' |s } (A:WARNING VACUUM, Bool) 1 == if{ '00004000' |s } (PMDG:WARN_annunHYD) if{ '00008000' |s } (A:GEAR LEFT POSITION, Percent) 100 == if{ '00010000' |s } (A:GEAR LEFT POSITION, Percent) 0 &gt; (A:GEAR LEFT POSITION, Percent) 100 &lt; and if{ '00020000' |s } 0 1 == if{ '00030000' |s } (A:GEAR CENTER POSITION, Percent) 100 == if{ '00040000' |s } (A:GEAR CENTER POSITION, Percent) 0 &gt; (A:GEAR CENTER POSITION, Percent) 100 &lt; and if{ '00080000' |s } 0 1 == if{ '000C0000' |s } (A:GEAR RIGHT POSITION, Percent) 100 == if{ '00100000' |s } (A:GEAR RIGHT POSITION, Percent) 0 &gt; (A:GEAR RIGHT POSITION, Percent) 100 &lt; and if{ '00200000' |s } 0 1 == if{ '00300000' |s } (PMDG:WARN_annunFIRE_WARN[0]) if{ '00400000' |s } (PMDG:FIRE_annunENG_OVERHEAT[0]) (PMDG:FIRE_annunENG_OVERHEAT[1]) or if{ '00800000' |s } (PMDG:MCP_annunHDG_SEL) if{ '01000000' |s } (PMDG:MCP_annunLNAV) if{ '02000000' |s } (PMDG:MCP_annunAPP) if{ '04000000' |s } (PMDG:MCP_annunVNAV) if{ '08000000' |s } (PMDG:MCP_annunALT_HOLD) if{ '10000000' |s } (PMDG:MCP_annunVS) if{ '20000000' |s } (PMDG:MCP_annunSPEED) if{ '40000000' |s } (PMDG:MCP_annunCMD_A) (PMDG:MCP_annunCMD_B) or if{ '80000000' |s } (HIDWRITE:0x294B,0x1901,'%s1')</script>
+      <edition>&lt;Section xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xml:space="preserve" TextAlignment="Left" LineHeight="Auto" IsHyphenationEnabled="False" xml:lang="en-us" FlowDirection="LeftToRight" NumberSubstitution.CultureSource="Text" NumberSubstitution.Substitution="AsCulture" FontFamily="Courier New" FontStyle="Normal" FontWeight="Normal" FontStretch="Normal" FontSize="12" Foreground="#FF000000" Typography.StandardLigatures="True" Typography.ContextualLigatures="True" Typography.DiscretionaryLigatures="False" Typography.HistoricalLigatures="False" Typography.AnnotationAlternates="0" Typography.ContextualAlternates="True" Typography.HistoricalForms="False" Typography.Kerning="True" Typography.CapitalSpacing="False" Typography.CaseSensitiveForms="False" Typography.StylisticSet1="False" Typography.StylisticSet2="False" Typography.StylisticSet3="False" Typography.StylisticSet4="False" Typography.StylisticSet5="False" Typography.StylisticSet6="False" Typography.StylisticSet7="False" Typography.StylisticSet8="False" Typography.StylisticSet9="False" Typography.StylisticSet10="False" Typography.StylisticSet11="False" Typography.StylisticSet12="False" Typography.StylisticSet13="False" Typography.StylisticSet14="False" Typography.StylisticSet15="False" Typography.StylisticSet16="False" Typography.StylisticSet17="False" Typography.StylisticSet18="False" Typography.StylisticSet19="False" Typography.StylisticSet20="False" Typography.Fraction="Normal" Typography.SlashedZero="False" Typography.MathematicalGreek="False" Typography.EastAsianExpertForms="False" Typography.Variants="Normal" Typography.Capitals="Normal" Typography.NumeralStyle="Normal" Typography.NumeralAlignment="Normal" Typography.EastAsianWidths="Normal" Typography.EastAsianLanguage="Normal" Typography.StandardSwashes="0" Typography.ContextualSwashes="0" Typography.StylisticAlternates="0"&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;'00000000'·······//·All·off·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;(PMDG:FUEL_annunLOWPRESS_Fwd[0])&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG:&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;FUEL_annunLOWPRESS_Fwd[&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;1&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;])·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;or·&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;if{·'00000001'·|s·}··//Aux·Fuel·Pump·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(A:BRAKE·PARKING·POSITION,·Bool)·if{·'00000002'·|s·}··//Parking·Brake·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:ELEC_annunGEN_BUS_OFF&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;[0]&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;)·(PMDG:ELEC_annunGEN_BUS_OFF[&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;1&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;])·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;or&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·if{·'00000004'·|s·}··//Low·Volts·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:DOOR_annunFWD_ENTRY)·if{·'00000008'·|s·}··//Door·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:APU_annunLOW_OIL_PRESSURE)·if{·'00000100'·|s·}··//Low·Oil·Pressure·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(PMDG:FUEL_annunLOWPRESS_Fwd[0])·(PMDG:FUEL_annunLOWPRESS_Fwd[1])·or·(PMDG:FUEL_annunLOWPRESS_Aft[0])·or·(PMDG:FUEL_annunLOWPRESS_Aft[1])·or·(PMDG:FUEL_annunLOWPRESS_Ctr[0])·or·(PMDG:FUEL_annunLOWPRESS_Ctr[1])·or·if{·'00000200'·|s·}··//Low·Fuel·Pressure··//Low·Fuel·Pressure·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:ICE_WingAntiIceSw)·(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:ICE_EngAntiIceSw[&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;0&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;])·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;or&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·(PMDG:ICE_EngAntiIceSw[&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;1&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;])·or·if{·'00000400'·|s·}··//Anti·Ice·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:ENG_StartValve[&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;0&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;])·(PMDG:ENG_StartValve[&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;1&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;])·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;or&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·if{·'00000800'·|s·}··//Starter·Engaged·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:APU_Selector)·if{·'00001000'·|s·}··//APU·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:WARN_annunMASTER_CAUTION&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;[0]&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;)·if{·'00002000'·|s·}··//Master·Caution·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(A:WARNING·VACUUM,·Bool)·1·==·if{·'00004000'·|s·}··//Vacuum·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:WARN_annunHYD)·if{·'00008000'·|s·}··//Low·Hyd·Pressure·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(A:GEAR·LEFT·POSITION,·Percent)·1&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;00&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·==·if{·'00010000'·|s·}··//Gear·L·Green·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(A:GEAR·LEFT·POSITION,·Percent)·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;0&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;&amp;gt;&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·(A:GEAR·LEFT·POSITION,·Percent)·1&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;00&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;&amp;lt;&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;and&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·if{·'00020000'·|s·}··//Gear·L·Red·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;0&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·1·==·if{·'00030000'·|s·}··//Gear·L·Orange·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(A:GEAR·CENTER·POSITION,·Percent)·1&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;00&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·==·if{·'00040000'·|s·}··//Gear·N·Green·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(A:GEAR·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;CENTER&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·POSITION,·Percent)·0·&amp;gt;·(A:GEAR·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;CENTER&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·POSITION,·Percent)·1&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;00&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·&amp;lt;·and·if{·'00080000'·|s·}··//Gear·N·Red·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;0&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·1·==·if{·'000C0000'·|s·}··//Gear·N·Orange·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(A:GEAR·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;RIGHT&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·POSITION,·Percent)·1&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;00&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·==·if{·'00100000'·|s·}··//Gear·R·Green·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(A:GEAR·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;RIGHT&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·POSITION,·Percent)·0·&amp;gt;·(A:GEAR·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;RIGHT&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·POSITION,·Percent)·1&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;00&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·&amp;lt;·and·if{·'00200000'·|s·}··//Gear·R·Red·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;0&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·1·==·if{·'00300000'·|s·}··//Gear·R·Orange·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:WARN_annunFIRE_WARN&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;[0]&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;)·if{·'00400000'·|s·}··//Master·Warning·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:FIRE_annunENG_OVERHEAT[&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;0&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;])·(PMDG:FIRE_annunENG_OVERHEAT[&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;1&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;])·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;or&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·if{·'00800000'·|s·}··//Engine·Fire·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:MCP_annunHDG_SEL)·if{·'01000000'·|s·}··//Hdg·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(PMDG:MCP_annun&lt;/Run&gt;&lt;Run xml:lang="en-au" Background="#FFFFFFFF"&gt;L&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;NAV)··if{·'02000000'·|s·}··//Nav·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:MCP_annunAPP)·if{·'04000000'·|s·}··//Apr·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(PMDG:MCP_annunVNAV)·if{·'08000000'·|s·}··//Rev·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:MCP_annunALT_HOLD)·if{·'10000000'·|s·}··//Alt·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:MCP_annunVS)·if{·'20000000'·|s·}··//VS·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:MCP_annunSPEED)·if{·'40000000'·|s·}··//IAS·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;PMDG&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;:MCP_annunCMD_A)·(PMDG:MCP_annunCMD_&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;B&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;)·&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;or&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;·if{·'80000000'·|s·}··//Auto·Pilot·&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run Background="#FFFFFFFF"&gt;(HIDWRITE:0x294B,0x1901,&lt;/Run&gt;&lt;Run xml:lang="de-de" Background="#FFFFFFFF"&gt;'%s1'&lt;/Run&gt;&lt;Run Background="#FFFFFFFF"&gt;)&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/Section&gt;</edition>
+      <repeating>True</repeating>
+    </Script>
+    <Script>
+      <group>PMDG</group>
+      <label>PMDG_737MSFS_CDU</label>
+      <script>(PMDG:reserved[0])</script>
+    </Script>
+    <Script>
+      <group>PMDG</group>
+      <label>PMDG_737MSFS_Data</label>
+      <script>(PMDG:reserved[0])</script>
     </Script>
   </scripts>
 </TemplateExport>
